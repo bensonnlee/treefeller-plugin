@@ -1,0 +1,12 @@
+name: TreeChopper
+version: ${project.version} # Gets version from pom.xml
+main: com.attic.treechopper.TreeChopper # Change if needed
+api-version: '1.21' # Minimum API version
+author: YourName # Change this
+description: Chops down entire trees and decays leaves quickly.
+website: https://yourwebsite.com # Optional
+# Define permissions if you want to restrict usage
+# permissions:
+#  treechopper.use:
+#    description: Allows the player to use the tree chopping feature.
+#    default: true

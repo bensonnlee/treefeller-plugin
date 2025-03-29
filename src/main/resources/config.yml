@@ -1,0 +1,22 @@
+# TreeChopper Configuration
+
+# Set to true to require the player to use an axe. Set to false to allow any item (or fist).
+require-axe: true
+
+# Maximum number of log blocks that can be broken in one go. Prevents server lag from huge trees.
+max-tree-size: 500
+
+# If true, only logs connected (directly or indirectly within the search) to leaf blocks will be considered part of a 'natural' tree.
+# This helps prevent breaking player-built log structures that don't resemble trees.
+check-for-leaves: true
+
+# Maximum distance (Manhattan distance) a leaf block can be from a log block to be included in the fast decay.
+# Should be large enough to catch leaves supported by the tree.
+leaf-search-radius: 7
+
+# Maximum distance (Manhattan distance) a log block can be from the initially broken log to be considered part of the same tree.
+# Helps limit the search scope, especially with diagonal checks.
+log-search-radius: 15
+
+# Debug mode - prints extra information to console. Useful for troubleshooting.
+debug-mode: false
